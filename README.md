@@ -1,10 +1,4 @@
-# driftR
-population genetic simulations with R and Shiny, inspired by popG (http://evolution.gs.washington.edu/popgen/popg.html)
-
-To run on the web: 
-https://cjbattey.shinyapps.io/driftR/
-
-(This server will time out at 100 active hours per month. Rehost or run locally for large classroom settings)
+# This is a Fork of [cjbattey/driftR](https://github.com/cjbattey/driftR)
 
 To run locally: 
 
@@ -18,10 +12,7 @@ To run locally:
           for(i in dl_pkgs) install.packages(i)
         }
         library(shiny)
-        runGitHub(username="cjbattey",repo="driftR")
-
-
-driftR is a population-genetic simulation web application inspired by the Java program popG (http://evolution.gs.washington.edu/popgen/popg.html). It is intended primarily for use in undergraduate courses in genetics and evolution, and can be accessed online at https://cjbattey.shinyapps.io/driftR/. 
+        runGitHub(username="diogro",repo="driftR")
 
 The software simulates change in allele frequency across multiple populations under the island model described in Wright (1931). Each diploid genotype is associated with a user-defined fitness, and relationships between genotype and fitness are uniform across populations. Population size is constant through time, but can vary across populations. Populations exchange migrants randomly at each generation at a rate set by the user. 
 

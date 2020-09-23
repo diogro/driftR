@@ -113,7 +113,7 @@ shinyServer(function(input,output,session){
   rep_sims <- eventReactive(input$run_replicates,{
     validate(
       need(max(n2())<=10000000,"Please select n <= 10,000,000"),
-      need(input$gen<=200,"Please select gen <=100")
+      need(input$gen<=1000,"Please select gen <=1000")
     )
     rep_sims <- data.frame(matrix(ncol=17))
     withProgress(message="simulating populations...",value=0,{
